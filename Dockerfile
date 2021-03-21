@@ -3,7 +3,7 @@ FROM debian:buster-slim
  
 ARG WORKSPACE=/root 
 
-RUN apt update && apt install software-properties-common git wget vim zsh curl unzip  build-essential cmake clang -y
+RUN apt update && apt install software-properties-common git wget vim zsh curl unzip  build-essential cmake clang python3-pip -y
 RUN git config --global user.name "John Doe"
 RUN git config --global user.email johndoe@example.com
 
